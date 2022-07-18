@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:text="Incripcion campeonato de futbol UMB"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="¿Como te llamas?"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textSize="14dp"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="¿Cuentos años tienes?"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textSize="14sp"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pocicion de campo"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_pocicion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="¿En que pocicion esta estas mas comodo?"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPocicion"
+                android:layout_width="match_parent"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EPS"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_eps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="¿Que entidad apara tu salud en caso de accidente?"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEps"
+                android:layout_width="match_parent"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/next" />
+</RelativeLayout>
